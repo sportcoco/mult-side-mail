@@ -1,7 +1,6 @@
 <template>
   <view class="content">
     <the-logo />
-    <base-header title="跨端框架" />
     <home-text title="Hellow the world" />
     <button class="button" @click="showTips">{{ buttonText }}</button>
   </view>
@@ -12,13 +11,12 @@ import TheLogo from './components/the-logo';
 import HomeText from './components/home-text';
 export default {
   components: {
-    BaseHeader,
     TheLogo,
-    HomeText,
+    HomeText
   },
   data() {
     return {
-      buttonText: 'click me',
+      buttonText: 'click me'
     };
   },
   methods: {
@@ -26,16 +24,16 @@ export default {
       uni.showModal({
         title: '提示',
         content: 'Hellow the world',
-        success: function(res) {
+        success: function (res) {
           if (res.confirm) {
             console.log('用户点击确定');
           } else if (res.cancel) {
             console.log('用户点击取消');
           }
-        },
+        }
       });
-    },
-  },
+    }
+  }
 };
 </script>
 

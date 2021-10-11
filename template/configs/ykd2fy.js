@@ -2,12 +2,11 @@ module.exports = {
   basic: {
     name: '医科大二附院',
     terminalId: {
-      'h5': '143394600100220210824094300',
+      'h5': '',
     },
     apiHost: {
-      development: 'https://29021-16-94.aihosp.demo.healthan.com.cn',
-      production: 'https://29021-16-94.aihosp.demo.healthan.com.cn'
-      // production: 'https://hzihospms.healthan.net/29021'
+      development: '',
+      production: ''
     }
   },
   manifest: {
@@ -50,7 +49,7 @@ module.exports = {
           pageBasic: {
             path: 'pages/home/home',
             style: {
-              navigationBarTitleText: '医科大二附院',
+              navigationBarTitleText: '医科大二附院'
             }
           },
           styleKey: 'Home',

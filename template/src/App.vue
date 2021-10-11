@@ -1,9 +1,6 @@
 <script>
 export default {
-  onLaunch: async function () {
-    await this.$store.dispatch('login/login');
-    await this.$store.dispatch('card/getCardList');
-  },
+  onLaunch: async function () {},
   onShow: function () {},
   onHide: function () {}
 };
