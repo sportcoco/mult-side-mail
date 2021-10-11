@@ -1,0 +1,176 @@
+/**
+ * 自定义的主题变量
+ *
+ */
+
+:root {
+  --primary-color: #1dac85;
+  --success-color: #19be6b;
+  --error-color: #fa3534;
+  --highlight-color: #ff4d4f;
+  --warning-color: #ff9900;
+  --normal-color: #d9d9d9;
+  --info-color: #909399;
+  --disabled-color:  #c8c9cc;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+// Base
+$primary-color: #1dac85;
+$success-color: #19be6b;
+$error-color: #fa3534;
+$highlight-color: #ff4d4f;
+$warning-color: #ff9900;
+$normal-color: #d9d9d9;
+$info-color: #909399;
+$disabled-color:  #c8c9cc;
+$black: #000000;
+$white: #ffffff;
+
+// Background color
+$body-background: $white; // Background color for `<body>`
+$component-background: $white; // Base background color for most components
+$popover-background: $component-background; // Popover background color
+$background-color-light: rgba($white, 0.98); // background of header and selected item
+$background-color-base: rgba($white, 0.96); // Default grey background color
+
+// Font color
+$heading-color: rgba($black, 0.85);
+$text-color: rgba($black, 0.85);
+$text-color-secondary: rgba($black, 0.45);
+$text-color-inverse: $white;
+$text-color-dark: rgba($white, 0.85);
+$text-color-secondary-dark: rgba($white, 0.65);
+$text-selection-bg: $primary-color;
+
+// Border color
+$border-color-base: rgba($black, 0.15); // base border outline a component
+$border-color-split: rgba($black, 0.06); // split border inside a component
+$border-color-inverse: $white;
+
+/**
+ * uView的主题变量
+ *
+ */
+
+$u-main-color: $text-color;
+$u-content-color: $text-color-secondary;
+$u-tips-color: $info-color;
+$u-light-color: $border-color-split;
+$u-border-color: $border-color-base;
+$u-bg-color: $background-color-base;
+
+$u-type-primary: $primary-color;
+$u-type-primary-light: #f6fcfb;
+$u-type-primary-disabled: #71d5a1;
+$u-type-primary-dark: #18b566;
+
+$u-type-warning: $warning-color;
+$u-type-warning-disabled: #fcbd71;
+$u-type-warning-dark: #f29100;
+$u-type-warning-light: #fdf6ec;
+
+$u-type-success: $success-color;
+$u-type-success-disabled: #71d5a1;
+$u-type-success-dark: #18b566;
+$u-type-success-light: #dbf1e1;
+
+$u-type-error: $error-color;
+$u-type-error-disabled: #fab6b6;
+$u-type-error-dark: #dd6161;
+$u-type-error-light: #fef0f0;
+
+$u-type-info: $info-color;
+$u-type-info-disabled: $disabled-color;
+$u-type-info-dark: #82848a;
+$u-type-info-light: #f4f4f5;
+
+$u-form-item-height: 70rpx;
+$u-form-item-border-color: $border-color-base;
+
+/**
+ * uni-app内置的常用样式变量
+ *
+ */
+
+/* 颜色变量 */
+
+/* 行为相关颜色 */
+$uni-color-primary: $primary-color;
+$uni-color-success: $success-color;
+$uni-color-warning: $warning-color;
+$uni-color-error: $error-color;
+
+/* 文字基本颜色 */
+$uni-text-color: $text-color; //基本色
+$uni-text-color-inverse: $text-color-inverse; //反色
+$uni-text-color-grey: $text-color-secondary; //辅助灰色，如加载更多的提示信息
+$uni-text-color-placeholder: #c0c4cc;
+$uni-text-color-disable: $disabled-color;
+
+/* 背景颜色 */
+$uni-bg-color: $background-color-base;
+$uni-bg-color-grey: rgba($white, 0.85);
+$uni-bg-color-hover: $background-color-light; //点击状态颜色
+$uni-bg-color-mask: rgba($black, 0.6); //遮罩颜色
+
+/* 边框颜色 */
+$uni-border-color: $border-color-base;
+
+/* 尺寸变量 */
+
+/* 文字尺寸 */
+$uni-font-size-sm: 24rpx;
+$uni-font-size-base: 28rpx;
+$uni-font-size-lg: 32rpx;
+
+/* 图片尺寸 */
+$uni-img-size-sm: 40rpx;
+$uni-img-size-base: 52rpx;
+$uni-img-size-lg: 80rpx;
+
+/* Border Radius */
+$uni-border-radius-sm: 4rpx;
+$uni-border-radius-base: 6rpx;
+$uni-border-radius-lg: 12rpx;
+$uni-border-radius-circle: 50%;
+
+/* 水平间距 */
+$uni-spacing-row-sm: 10px;
+$uni-spacing-row-base: 20rpx;
+$uni-spacing-row-lg: 30rpx;
+
+/* 垂直间距 */
+$uni-spacing-col-sm: 8rpx;
+$uni-spacing-col-base: 16rpx;
+$uni-spacing-col-lg: 24rpx;
+
+/* 透明度 */
+$uni-opacity-disabled: 0.3; // 组件禁用态的透明度
+
+/* 文章场景相关 */
+$uni-color-title: #303133; // 文章标题颜色
+$uni-font-size-title:40rpx;
+$uni-color-subtitle: #606266; // 二级标题颜色
+$uni-font-size-subtitle:36rpx;
+$uni-color-paragraph: #3F536E; // 文章段落颜色
+$uni-font-size-paragraph:30rpx;
+
+$uni-color-list-title: #111111; // 列表头标题
+$uni-font-size-title:90rpx;
+$uni-font-weight-600: 600;
+$uni-bg-color-light-grey: #CEEDE5;
+$uni-color-black: #333333;
+$uni-bg-color-light-white: #F9F9F9;
+$uni-bg-color-red: #F73636;
+$uni-color-dark-grey: #666666;
+$uni-color-border-grey: #DFDFDF;
+$uni-color-tip-grey: #999999;
+$uni-bg-color-table-grey: #F8F8F8;
+$uni-color-title: $text-color; // 文章标题颜色
+$uni-font-size-title: 40rpx;
+$uni-color-subtitle: $text-color-secondary; // 二级标题颜色
+$uni-font-size-subtitle: 36rpx;
+$uni-color-paragraph: $info-color; // 文章段落颜色
+$uni-font-size-paragraph: 30rpx;

@@ -1,0 +1,11 @@
+{
+  "name": "multi-side-mail",
+  "version": "1.0.0",
+  "description": "multi-side template repo",
+  "main": "meta.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shibo <447351751@qq.com>",
+  "license": "MIT"
+}

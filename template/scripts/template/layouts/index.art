@@ -1,0 +1,51 @@
+<template>
+  <view class="container">
+  <$ each page.componentConfig item $>
+    <<$ $imports.formatCompName(item.styleKey) $> <$ $imports.formatCompProps(item.props) $> />
+  <$ /each $>
+  </view>
+</template>
+
+<script>
+// 1. 组件集合
+// 2. 组件 props 数据
+// 3. 页面配置公共数据
+import config from "@/configs/app.js"
+<$ each page.componentConfig item $>
+import <$ item.styleKey $> from "<$ item.compPath $>"
+<$ /each $>
+const pageConfig = filterPageConfig(config, '<$ page.moduleName $>', '<$ page.pageBasic.path $>')
+
+function filterPageConfig(rootConfig = {}, moduleName = '', pagePath = '') {
+  const MODULES_KEY = 'modules';
+  const PAGE_KEY = 'pages';
+  const module = rootConfig[MODULES_KEY][moduleName];
+  let config;
+  for (const item of module[PAGE_KEY]) {
+    if (item.pageBasic && item.pageBasic.path === pagePath) {
+      config = item;
+      config.moduleName = moduleName;
+      config.moduleConfig = module.moduleConfig;
+      break;
+    }
+  }
+  return config || {};
+}
+
+export default {
+  components:{
+    <$ each page.componentConfig item $>
+    <$ item.styleKey $>,
+    <$ /each $>
+  },
+  provide: {
+    ...(pageConfig || {})
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+<$ if page.pageStyle $>
+.container {}
+<$ /if $>
+</style>

@@ -1,0 +1,28 @@
+{
+  "pages": [],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "智慧医院",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#FFFFFF"
+  },
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  },
+  "subPackages": [],
+  "tabBar": {
+    "color": "#DCDCDC",
+    "selectedColor": "#1DAC85",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/home/home"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/user/user"
+      }
+    ]
+  }
+}

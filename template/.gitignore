@@ -1,0 +1,21 @@
+.idea/
+.vscode/
+.gitconfig
+
+# dependencies
+/node_modules
+/npm-debug.log*
+/yarn-error.log
+/.changelog
+*.log
+
+# misc
+.DS_Store
+
+
+node_modules
+/dist
+/src/configs/**
+/src/manifest.json
+/src/pages.json
+/src/uni.scss
