@@ -12,7 +12,7 @@ nunjucks参考文档：https://nunjucks.bootcss.com/templating.html
 mf init
 
 # example
-mpx init
+mf init
 ```
 
 模板是基于uni-app, 进行改造的
