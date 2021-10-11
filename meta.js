@@ -1,3 +1,3 @@
 module.export = {
-  skipInterpolation: '**/**.art'
+  skipInterpolation: '**/**.{art}'
 };
